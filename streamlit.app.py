@@ -46,6 +46,7 @@ add_my_fruit = streamlit.text_input("What fruit would you like to add", 'Kiwi')
 streamlit.write('Thanks for adding', add_my_fruit)
 
 #this will not work correctly, but just go with it for now
+#this will just insert the quoted text into the fruit load list table in snowflake
 my_cur.execute("insert into fruit_load_list values ('from streamlit')")
 
 
